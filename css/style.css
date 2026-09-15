@@ -1,0 +1,389 @@
+/* BAGIAN UMUM */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Nunito", sans-serif;
+    color: #4a2545;
+    background-image: linear-gradient(
+            rgba(255, 192, 203, 0.35),
+            rgba(255, 192, 203, 0.35)
+        ),
+        url(https://i.pinimg.com/736x/f9/d5/cd/f9d5cd9601338a52fe36ca5ed2ba512d.jpg);
+}
+a {
+    text-decoration: none;
+    color: #4a2545;
+}
+ul {
+    list-style: none;
+}
+button {
+    font-family: "Nunito", sans-serif;
+}
+
+/* BAGIAN NAVIGASI */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    border-bottom: 1px solid #ffd9e6;
+    box-shadow: 0 4px 15px rgba(74, 37, 69, 0.08);
+}
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-family: "Square Peg", sans-serif;
+    font-size: 29px;
+    font-weight: 900;
+    font-size: 1000;
+}
+.logo-dot {
+    color: #ff6f9c;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    background-color: #ffc1d6;
+    border-radius: 25px;
+    padding: 20px;
+}
+.nav-link {
+    color: #8a6b86;
+    font-weight: 800;
+    position: relative;
+    font-family: "Nunito", sans-serif;
+    gap: 20px;
+}
+.nav-link:hover,
+.nav-link.active {
+    color: white;
+}
+.nav-badge {
+    min-width: 20px;
+    padding: 2px 7px;
+    margin-left: 4px;
+    background-color: #ff6f9c;
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: 11px;
+    text-align: center;
+}
+.hamburger {
+    display: none;
+    width: 38px;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.hamburger span {
+    align-items: center;
+    display: block;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #4a2545;
+    border-radius: 5px;
+}
+
+/* BAGIAN SECTION DAN JUDUL */
+
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 55px 30px;
+}
+.section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.section-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    color: #4a2545;
+}
+.section-sub {
+    margin-top: 7px;
+    color: #8a6b86;
+}
+
+/* BAGIAN META DAN AKSI */
+
+.hero-eyebrow {
+    margin-bottom: 10px;
+    color: #ffd9e6;
+    font-weight: 800;
+}
+.hero-title {
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    line-height: 1.15;
+}
+.hero-meta,
+.detail-meta,
+.modal-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* BAGIAN BADGE DAN TOMBOL */
+
+.badge {
+    display: inline-block;
+    padding: 6px 13px;
+    background-color: #ffd9e6;
+    color: #4a2545;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 800;
+}
+.badge-rating {
+    background-color: #ffddc2;
+}
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 5px 18px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+.btn-primary {
+    background-color: #ff6f9c;
+    color: #ffffff;
+}
+.btn-primary:hover {
+    background-color: #e95785;
+}
+.btn-secondary {
+    background-color: #ffd9e6;
+    color: #4a2545;
+}
+.btn-secondary:hover {
+    background-color: #ffc1d6;
+}
+
+/* BAGIAN CARD DRAMA */
+
+.drama-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+.drama-card {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 22px rgba(255, 111, 156, 0.5);
+    cursor: pointer;
+    transition: 0.3s;
+    border: 5px solid white;
+
+}
+.drama-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 28px rgba(74, 37, 69, 0.17);
+}
+.drama-card img {
+    display: block;
+    width: 100%;
+    height: 320px;
+}
+.drama-card-body {
+    padding: 16px;
+}
+.drama-card-title {
+    margin-bottom: 6px;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+}
+.drama-card-info {
+    color: #8a6b86;
+    font-size: 14px;
+}
+.drama-card-rating {
+    margin-top: 8px;
+    color: #ff6f9c;
+    font-weight: 800;
+}
+.favorite-button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #ff6f9c;
+    font-size: 21px;
+    cursor: pointer;
+    z-index: 2;
+    box-shadow: 0 4px 12px rgba(74, 37, 69, 0.12);
+}
+.favorite-button:hover {
+    background-color: #ffd9e6;
+}
+
+/* BAGIAN FORM */
+
+.login-box,
+.contact-box {
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(74, 37, 69, 0.09);
+}
+.login-box {
+    max-width: 560px;
+}
+.form-group {
+    margin-top: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4a2545;
+    font-weight: 800;
+}
+.form-group input,
+.form-group textarea,
+.contact-box textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #ffd9e6;
+    border-radius: 12px;
+    background-color: #fffafd;
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+}
+.form-group textarea,
+.contact-box textarea {
+    resize: none;
+}
+.form-group input:focus,
+.form-group textarea:focus,
+.contact-box textarea:focus {
+    outline: none;
+    border-color: #ff6f9c;
+}
+.form-button {
+    margin-top: 25px;
+}
+.register-text {
+    margin-top: 22px;
+    text-align: center;
+    color: #8a6b86;
+}
+.register-text a {
+    color: #ff6f9c;
+    font-weight: 800;
+}
+.form-message {
+    margin-top: 15px;
+    text-align: center;
+    color: #ff6f9c;
+    font-weight: 800;
+}
+
+/* BAGIAN FOOTER */
+.footer {
+    background-color: #ffffff;
+    margin-top: 50px;
+    border-top: 1px solid #eeeeee;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 7%;
+    border-bottom: 1px solid #eeeeee;
+}
+.footer-brand {
+    width: 35%;
+}
+.footer-brand h2 {
+    color: #4a2545;
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-family: "Square Peg", sans-serif;
+}
+.footer-brand p {
+    color: #8a6b86;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.footer-social {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-social img {
+    width: 28px;
+    height: 28px;
+}
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.footer-menu h3 {
+    color: #4a2545;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.footer-menu p {
+    color: #8a6b86;
+    font-size: 15px;
+    margin: 0;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+}
+.footer-bottom p {
+    color: #4a2545;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-brand {
+        width: 100%;
+    }
+} 

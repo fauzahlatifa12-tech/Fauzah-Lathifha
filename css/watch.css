@@ -1,0 +1,28 @@
+/* BAGIAN HALAMAN WATCH */
+
+.watch-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 55px 30px;
+}
+.watch-title {
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+}
+.watch-video {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 22px;
+    background-color: #4a2545;
+    box-shadow: 0 8px 25px rgba(74, 37, 69, 0.12);
+}
+.watch-information {
+    margin-top: 20px;
+}
+
+/* JARAK TOMBOL KEMBALI */
+#back-detail {
+    margin-top: 18px;
+}

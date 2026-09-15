@@ -1,0 +1,18 @@
+/* BAGIAN FAVORITE */
+
+.empty-favorite {
+    margin-top: 30px;
+    padding: 45px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 22px;
+    box-shadow: 0 7px 20px rgba(74, 37, 69, 0.08);
+}
+.empty-favorite h2 {
+    margin-bottom: 8px;
+    font-family: "Poppins", sans-serif;
+}
+.empty-favorite p {
+    margin-bottom: 22px;
+    color: #8a6b86;
+}

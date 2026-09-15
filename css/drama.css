@@ -1,0 +1,57 @@
+/* BAGIAN PENCARIAN DRAMA */
+
+/* SEARCH DRAMA */
+.search-box {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 30px;
+}
+.search-box input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid #ffd9e6;
+    border-radius: 15px;
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+.search-box input:focus {
+    border: 2px solid #ff6f9c;
+}
+
+/* BAGIAN PAGINATION */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 30px;
+}
+.pagination-button {
+    min-width: 38px;
+    padding: 9px 12px;
+    border: 1px solid #ffd9e6;
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: #4a2545;
+    font-weight: 800;
+    cursor: pointer;
+}
+.pagination-button:hover,
+.pagination-button.active {
+    background-color: #ff6f9c;
+    color: #ffffff;
+}
+.tahun-rilis {
+    border-radius: 20px;
+    background-color:lightpink;
+    color: #ffffff;
+    border: none;
+    padding: 9px;
+    font-weight: 600;
+}
+.tahun-rilis option{
+    background-color: #ffffff;
+    color: #4a2545;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draela - Detail Drama</title>    
+    <link rel="icon" type="image/png" href="/asset/logodraela.png">
+    <!-- font nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- font zeyada -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Shadows+Into+Light+Two&family=Square+Peg&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <!-- BAGIAN NAVIGASI -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="../index.html" class="logo">Draela<span class="logo-dot">.</span></a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="drama.html" class="nav-link active">Drama</a></li>
+                    <li><a href="favorite.html" class="nav-link" id="favorite-link">Favorite</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="login.html" class="nav-link" id="login-link">Login</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <!-- BAGIAN KONTEN UTAMA -->
+    <main class="detail-page">
+        <section class="detail-head">
+            <img src="" alt="Poster drama" class="detail-poster" id="detail-poster">
+            <div class="detail-info">
+                <p class="hero-eyebrow">Detail Drama</p>
+                <h1 class="detail-title" id="detail-nama">Memuat drama...</h1>
+                <div class="detail-meta">
+                    <span class="badge" id="detail-rilis"></span>
+                    <span class="badge" id="detail-episode"></span>
+                    <span class="badge badge-rating" id="detail-rating"></span>
+                </div>
+                <p class="detail-text" id="detail-text">Sedang memuat</p>
+                <div class="hero-actions">
+                    <a href="#" class="btn-primary" id="watch-now">Watch Now</a>
+                    <button type="button" class="btn-secondary" id="favorite-button">♡ My List</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="cast-section">
+            <div class="section-head">
+                <div>
+                    <h2 class="section-title">Pemeran</h2>
+                </div>
+            </div>
+            <div class="cast-scroll" id="cast-gallery"></div>
+        </section>
+    </main>
+
+    <!-- BAGIAN FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>Draela</h2>
+                <p>
+                    Temukan dan nikmati berbagai drama Korea
+                    favoritmu dalam satu tempat.
+                </p>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/fauzahltifa_/" target="_blank"><img src="../asset/ig.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/" target="_blank"><img src="../asset/tiktok.png" alt="TikTok"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="../asset/yt.png" alt="YouTube"></a>
+            </div>
+            </div>
+            <div class="footer-menu">
+                <h3>Draela</h3>
+                <p>Home</p>
+                <p>Drama</p>
+                <p>Favorite</p>
+                <p>About</p>
+            </div>
+            <div class="footer-menu">
+                <h3>Bantuan</h3>
+                <p>Contact</p>
+                <p>Login</p>
+                <p>Register</p>
+            </div>
+            <div class="footer-menu">
+                <h3>Informasi</h3>
+                <p>Ketentuan Penggunaan</p>
+                <p>Kebijakan Privasi</p>
+                <p>Hak Cipta</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                Draela © 2026 | Fauzah Lathifha
+            </p>
+        </div>
+    </footer>
+    <script src="../js/nav.js"></script>
+    <script src="../js/detail.js"></script>
+</body>
+</html>

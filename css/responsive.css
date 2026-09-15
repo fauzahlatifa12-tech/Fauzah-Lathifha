@@ -1,0 +1,188 @@
+/* BAGIAN RESPONSIVE */
+
+/* UNTUK UKURAN TABLET */
+@media (max-width: 900px) {
+    .drama-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-data {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* UNTUK UKURAN HP, DIMANA NAV NYA JADI HAMBURGER */
+@media (max-width: 700px) {
+    .pagination {
+        flex-wrap: wrap;
+    }
+    .header-inner {
+        padding: 15px 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        border-bottom: 1px solid #ffd9e6;
+    }
+
+    .nav.show {
+        display: block;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 15px 20px;
+    }
+
+    .nav-list li {
+        width: 100%;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .section,
+    .detail-page,
+    .watch-page {
+        padding: 35px 20px;
+    }
+
+    .about {
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+    .about-title {
+        padding: 25px 20px;
+    }
+
+    .about-title h1 {
+        font-size: 32px;
+    }
+
+
+    .section-head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .drama-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero {
+        min-height: 560px;
+    }
+
+    .hero-content {
+        bottom: 35px;
+    }
+
+    .hero-information {
+        align-items: flex-start;
+    }
+
+    .hero-poster {
+        width: 125px;
+        height: 185px;
+    }
+
+    .hero-title {
+        font-size: 35px;
+    }
+
+    .detail-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .watch-video {
+        height: 350px;
+    }
+}
+
+/* UNTUK LAYAR PALING KECILl */
+@media (max-width: 450px) {
+    .drama-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-information {
+        flex-direction: column;
+    }
+
+    .hero-title {
+        font-size: 29px;
+    }
+
+    .hero-desc {
+        font-size: 14px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .detail-poster {
+        width: 220px;
+        height: 315px;
+    }
+
+    .detail-title {
+        font-size: 32px;
+    }
+
+    .login-box,
+    .contact-box,
+    .profile-box {
+        padding: 25px;
+    }
+
+    .profile-top {
+        align-items: flex-start;
+    }
+
+    .profile-avatar {
+        width: 65px;
+        height: 65px;
+        flex-basis: 65px;
+        font-size: 27px;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+    }
+
+    .profile-actions a,
+    .profile-actions button {
+        text-align: center;
+    }
+
+    .watch-video {
+        height: 230px;
+    }
+}

@@ -1,0 +1,99 @@
+/* BAGIAN DETAIL DRAMA */
+
+.detail-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 55px 30px;
+}
+.detail-head {
+    display: flex;
+    gap: 38px;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(74, 37, 69, 0.12);
+}
+.detail-poster {
+    width: 280px;
+    height: 400px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(74, 37, 69, 0.15);
+}
+.detail-info {
+    flex: 1;
+}
+.detail-title {
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+    font-size: 42px;
+    color: #4a2545;
+}
+.detail-meta {
+    margin-bottom: 20px;
+}
+.detail-text {
+    margin: 20px 0 25px;
+    color: #8a6b86;
+    line-height: 1.7;
+}
+
+/* BAGIAN PEMAIN */
+.cast-section {
+    margin-top: 20px;
+}
+.cast-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 5px 20px;
+}
+.cast-card {
+    flex: 0 0 220px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 22px rgba(255, 111, 156, 0.5);
+    border: 2px solid #ffd9e6;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cast-card:hover {
+    transform: translateY(-8px) rotate(1deg);
+    box-shadow: 0 14px 25px rgba(74, 37, 69, 0.17);
+}
+.cast-photo {
+    display: block;
+    width: 100%;
+    height: 280px;
+}
+.cast-body {
+    padding: 15px;
+}
+.cast-actor {
+    font-family: "Poppins", sans-serif;
+    color: #4a2545;
+}
+.cast-character {
+    margin-top: 5px;
+    color: #8a6b86;
+}
+.cast-label {
+    margin-top: 12px;
+    color: #ff6f9c;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+/* BAGIAN DATA PEMAIN KOSONG */
+.cast-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffd9e6;
+    color: #4a2545;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
