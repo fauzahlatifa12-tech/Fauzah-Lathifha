@@ -24,3 +24,5 @@ Draela adalah website yang menyediakan informasi mengenai drama Korea (K-Drama).
 - CSS
 - JavaScript
 - API
+
+Dibuat Fauzah lathifha
